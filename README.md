@@ -63,6 +63,12 @@ Using modified settings You can:
 TEMPLATE_MINIFIER_HTML_TAGS = False # default = True
 ```
 
+* turn off stripping for specific templates
+
+```python
+SETTINGS_TEMPLATE_MINIFIER_EXCLUDE = ('marketing_email.html', 'lead_email.html') 
+```
+
 * turn off stripping spaces between Django template tags (\s{%, %}\s)
 
 ```python
