@@ -57,25 +57,35 @@ Advanced usage:
 -----------
 
 Using modified settings You can:
-* turn off stripping spaces between HTML tags
+* **Turn off stripping spaces between HTML tags**
 
 ```python
 TEMPLATE_MINIFIER_HTML_TAGS = False # default = True
 ```
 
-* turn off stripping spaces between Django template tags (\s{%, %}\s)
+* **Turn off stripping spaces between Django template tags (\s{%, %}\s)**
 
 ```python
 TEMPLATE_MINIFIER_TEMPLATE_TAGS = False # default = True
 ```
 
-* turn off all stripping
+* **Turn off minifying for specific templates**
+
+```python
+TEMPLATE_MINIFIER_EXCLUDE = (
+        "emails/order_receipt.html",
+        "emails/order_receipt.txt",
+    )
+```
+
+
+* **Turn off all stripping**
 
 ```python
 TEMPLATE_MINIFIER = False # default = True
 ```
 
-* run Your own strip_function, which preprocess templates
+* **Run Your own strip_function, which preprocess templates**
 
 ```python
 TEMPLATE_MINIFER_STRIP_FUNCTION = 'template_minifier.utils.strip_spaces_in_template'
