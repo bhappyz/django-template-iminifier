@@ -1,4 +1,4 @@
-django-template-minifier
+django-template-iminifier
 ========================
 
 Django application, providing simple template loader. It reduces HTML output in templates by stripping out whitespace characters between HTML and django template tags.
@@ -14,7 +14,7 @@ Installation
 * via [virtualenv](http://www.virtualenv.org/en/latest/#what-it-does) - yup we highly recommend it!
 
 ```bash
-pip install django-template-minifier
+pip install django-template-iminifier
 ```
 
 * or [download 1.0 package](https://github.com/iRynek/django-template-minifier/archive/v1.0.zip), unzip and run:
